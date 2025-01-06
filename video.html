@@ -13,11 +13,9 @@
         <video id="myVideo" width="480" height="270" muted>
             <source src="https://download.blender.org/peach/bigbuckbunny_movies/BigBuckBunny_640x360.m4v" type="video/mp4">
         </video>
-        <div id="overlay"></div>
     </div>
     <script>
         const video = document.getElementById('myVideo');
-        const overlay = document.getElementById('overlay');
 
         // 尝试自动播放
         video.play().catch(error => {
@@ -26,7 +24,7 @@
         });
 
 
-        overlay.addEventListener('click', function() {
+        video.addEventListener('click', function() {
             window.open('https://www.google.com');
         });
     </script>
